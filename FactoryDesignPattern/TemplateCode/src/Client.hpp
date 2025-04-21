@@ -10,6 +10,7 @@ class Client
     public:
     void SetCreator(Creator* obj); 
     Product* GetProduct();
+    void Action();
 
 };
 
