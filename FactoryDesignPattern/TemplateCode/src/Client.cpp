@@ -1,21 +1,28 @@
 #include <iostream>
 #include "Client.hpp"
+#include "Creator1.hpp"
+#include "Creator2.hpp"
 
 using namespace std;
 
-void Client::SetCreator(Creator *obj)
+unique_ptr<Client> Client::Create(int type)
 {
-    creatorObj = obj;
-}
-
-Product *Client::GetProduct()
-{
-    cout << "Client is just calling CreateProduct of Creator" << endl;
-    return creatorObj->CreateProduct();
+    switch(type) {
+        case 1 : {
+            return unique_ptr<Client>(new Client(new Creator1()));
+        }
+        case 2 : {
+            return unique_ptr<Client>(new Client(new Creator2()));
+        }
+        default : {
+            cout << endl << "beep beep wrong Creator choice beep beep. There is no Creator" << type << endl;
+            return nullptr;
+        }
+    }
 }
 
 void Client::Action()
 {
-    cout << endl << "Client is blindly doing its action" << endl;
-    GetProduct()->commonMethod();
+    cout << endl << "Client Action" << endl;
+    creatorObj->CreateProduct()->commonMethod();
 }
