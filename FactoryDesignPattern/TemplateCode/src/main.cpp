@@ -1,6 +1,4 @@
 #include <iostream>
-#include "Creator1.hpp"
-#include "Creator2.hpp"
 #include "Client.hpp"
 
 using namespace std;
@@ -20,7 +18,7 @@ int main()
     if(client2 != nullptr) {
         client2->Action();
     }
-    
+
     auto client3 = Client::Create(3);
 
     if(client3 != nullptr) {

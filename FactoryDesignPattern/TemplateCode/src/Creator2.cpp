@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Creator2.hpp"
+#include "Product2.hpp"
 
 using namespace std; 
 

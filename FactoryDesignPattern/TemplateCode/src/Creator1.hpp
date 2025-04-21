@@ -2,7 +2,6 @@
 #define CREATOR1_HPP
 
 #include "Creator.hpp"
-#include "Product1.hpp"
 
 class Creator1 : public Creator
 {
