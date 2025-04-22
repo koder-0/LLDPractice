@@ -16,7 +16,7 @@ int main()
     streambuf* coutBuf = cout.rdbuf();
     cout.rdbuf(logFile.rdbuf());
 
-    cout << endl << "******************** Factory Design Pattern Template Demo ********************" << endl;
+    cout << endl << "****************** Singleton Design Pattern Template Demo ********************" << endl;
 
     auto client1 = new Client();
 
