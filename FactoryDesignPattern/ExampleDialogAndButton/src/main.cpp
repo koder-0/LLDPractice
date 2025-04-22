@@ -1,37 +1,34 @@
+#include "Client.hpp"
 #include <iostream>
 #include <fstream>
-#include "Client.hpp"
 
 using namespace std;
 
 int main() 
 {
-    std::ofstream logFile("logs/output.log");
+    ofstream logFile("logs/output.log");
 
     if(!logFile) {
-        std::cerr << "failed to open output log file." << endl;
+        cerr << "failed to open output log file." << endl;
         return 1;
     }
 
     streambuf* coutBuf = cout.rdbuf();
     cout.rdbuf(logFile.rdbuf());
 
-    cout << endl << "******************** Factory Design Pattern Template Demo ********************" << endl;
+    cout << endl << "************ Factory Design Pattern Example Dialog and Button Demo ***********" << endl;
 
-    auto client1 = Client::Create(1);
-
+    auto client1 = Client::Create(DIALOG_WINDOW);
     if(client1 != nullptr) {
         client1->Action();
     }
 
-    auto client2 = Client::Create(2);
-
+    auto client2 = Client::Create(DIALOG_HTML);
     if(client2 != nullptr) {
         client2->Action();
     }
 
-    auto client3 = Client::Create(3);
-
+    auto client3 = Client::Create(DIALOG_END);
     if(client3 != nullptr) {
         client3->Action();
     }

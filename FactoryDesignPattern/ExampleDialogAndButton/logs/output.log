@@ -1,0 +1,18 @@
+
+************ Factory Design Pattern Example Dialog and Button Demo ***********
+
+Client Action
+window button is created.
+window button click action is defined
+window button got rendered
+dialog got rendered
+
+Client Action
+html button is created
+html button click action is defined
+html button got rendered
+dialog got rendered
+
+beep beep wrong dialog choice
+
+************************************* The End *********************************

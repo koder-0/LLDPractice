@@ -1,0 +1,14 @@
+
+******************** Factory Design Pattern Template Demo ********************
+
+Client Action
+CreateProduct of Creator1 is called. Creator1 creating Product1
+commonMethod called from Product1 class
+
+Client Action
+CreateProduct of Creator2 is called. Creator2 creating Product2
+commonMethod called from Product2 class
+
+beep beep wrong Creator choice beep beep. There is no Creator3
+
+************************************* The End *********************************
