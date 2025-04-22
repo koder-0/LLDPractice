@@ -1,5 +1,5 @@
 
-******************** Factory Design Pattern Template Demo ********************
+****************** Singleton Design Pattern Template Demo ********************
 
 Client Action
 new singleton object created: client1
