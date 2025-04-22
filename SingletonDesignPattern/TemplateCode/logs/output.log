@@ -1,0 +1,16 @@
+
+******************** Factory Design Pattern Template Demo ********************
+
+Client Action
+new singleton object created: client1
+task is done
+
+Client Action
+old singleton object used: client1
+task is done
+
+Client Action
+old singleton object used: client1
+task is done
+
+************************************* The End *********************************
